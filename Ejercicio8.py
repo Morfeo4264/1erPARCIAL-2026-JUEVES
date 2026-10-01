@@ -85,3 +85,9 @@ class KwikEMart:
                 if producto.stock <= 10:
                     contador += 1
         return contador
+
+    def agregarPasillo (self, nuevoPasillo):
+            self.pasillos[nuevoPasillo] = []
+
+    def cantidadPasillos (self):
+            return len(self.pasillos)
