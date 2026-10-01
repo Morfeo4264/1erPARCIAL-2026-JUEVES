@@ -2,4 +2,4 @@
 #y devuelve el total de interrupciones.
 
 def interrupRecursivo():
-    
+    casoBase =
