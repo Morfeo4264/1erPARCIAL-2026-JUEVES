@@ -39,7 +39,14 @@ class ProductoKwikE (self, id_producto, descripcion, marca, fecha_vencimiento, p
             self.stock = 0
         return expiracion.days
 
+    #funcion adicional
+    def mostrarMarca(self):
+        return self.marca 
 
+    def checkearStock(self):
+        if self.stock <= 10:
+            return f"Hay pocas existencias de {self.descripcion}"
+        return f"Hay {self.stock} del producto {self.descripcion}"
     
 
     
